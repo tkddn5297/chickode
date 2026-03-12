@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHICKODE - 문제 풀기</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Pretendard:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app app--worksheet">
+      <header class="topbar">
+        <div class="topbar__inner">
+          <a class="brand" href="index.html" aria-label="CHICKODE 홈으로 이동">
+            <span class="brand__logo">CHICKODE</span>
+          </a>
+          <div class="worksheet__chapterPill">
+            CHICKODE: 문제 풀기 ·
+            <span id="chapter-label">[Chapter 1: 코드 기초 (Variables)]</span>
+          </div>
+        </div>
+      </header>
+
+      <main class="worksheet" role="main">
+        <section class="worksheet__left" aria-label="문제 및 AI 튜터">
+          <div class="worksheet__card worksheet__card--problem">
+            <div class="worksheet__cardHeader">문제</div>
+            <div class="worksheet__cardBody">
+              <p id="problem-text" class="worksheet__problemText"></p>
+            </div>
+          </div>
+
+          <div class="worksheet__card worksheet__card--hint">
+            <div class="worksheet__cardHeader worksheet__cardHeader--hint">
+              AI 튜터 힌트
+            </div>
+            <div class="worksheet__cardBody worksheet__cardBody--hint">
+              <div class="tutor">
+                <img
+                  class="tutor__image float"
+                  src="C:/Users/LG/.cursor/projects/c-Users-LG-Desktop-chickode-project/assets/c__Users_LG_AppData_Roaming_Cursor_User_workspaceStorage_11c1dfa0e424eeadecc746e3b8a39b03_images_image-6aa9a86b-4b2c-452f-9d2a-8497429d57d5.png"
+                  alt="초록 후드를 입은 AI 튜터 병아리"
+                  loading="eager"
+                />
+              </div>
+              <div class="hintList">
+                <p class="hintList__title">AI 튜터 힌트</p>
+                <ul id="hint-list" class="hintList__items"></ul>
+                <button
+                  type="button"
+                  id="next-problem"
+                  class="btn btn--secondary btn--sm"
+                >
+                  다른 문제 불러오기
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="worksheet__right" aria-label="단안 작성 프롬프트">
+          <div class="worksheet__card worksheet__card--editor">
+            <div class="worksheet__editorHeader">
+              <span class="worksheet__editorTitle">단안 작성 프롬프트</span>
+              <span class="worksheet__editorLang">Python (박채원)</span>
+            </div>
+
+            <div class="codeShell">
+              <div class="codeShell__tabbar">
+                <div class="codeShell__tabs">
+                  <button class="codeShell__tab codeShell__tab--active" type="button">
+                    variables.py
+                  </button>
+                </div>
+                <div class="codeShell__traffic">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+
+              <div class="codeShell__body">
+                <div class="codeShell__gutter" aria-hidden="true">
+                  <span>1</span>
+                  <span>2</span>
+                  <span>3</span>
+                  <span>4</span>
+                  <span>5</span>
+                  <span>6</span>
+                  <span>7</span>
+                  <span>8</span>
+                  <span>9</span>
+                  <span>10</span>
+                </div>
+                <textarea
+                  id="code-editor"
+                  class="codeShell__editor"
+                  spellcheck="false"
+                  aria-label="정답 코드를 입력하는 영역"
+                >def print_info():
+    # 여기에 코드를 작성해보세요
+    my_name = ""
+    my_age = 0
+
+    print(my_name)
+    print(my_age)
+</textarea
+                >
+              </div>
+            </div>
+
+            <div class="worksheet__actions">
+              <button type="button" id="submit-code" class="btn btn--primary">
+                코드 제출
+              </button>
+              <p id="submit-message" class="worksheet__submitMessage" aria-live="polite"></p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+
