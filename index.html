@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHICKODE</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <meta name="color-scheme" content="light" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Pretendard:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="page page--home">
+    <div class="app">
+      <!-- 배경: 이미지 파일을 끼울 수 있는 레이어(구름/회로) -->
+      <div class="bg" aria-hidden="true">
+        <div class="bg__circuit bg__circuit--left"></div>
+        <div class="bg__circuit bg__circuit--right"></div>
+        <div class="bg__cloud bg__cloud--left"></div>
+        <div class="bg__cloud bg__cloud--right"></div>
+        <div class="bg__mist"></div>
+      </div>
+
+      <header class="topbar">
+        <div class="topbar__inner">
+          <a class="brand" href="#" aria-label="CHICKODE 홈">
+            <span class="brand__logo">CHICKODE</span>
+          </a>
+
+          <nav class="nav" aria-label="상단 메뉴">
+            <a class="nav__link nav__link--clay" href="#">홈</a>
+            <a class="nav__link nav__link--clay" href="#">함께 풀기</a>
+            <a class="nav__link nav__link--clay" href="#">작품 전시</a>
+            <a class="nav__pill nav__pill--clay" href="#">코로 빚기</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="hero" role="main">
+        <section class="hero__content" aria-label="소개">
+          <h1 class="hero__title">
+            <span class="hero__titleBrand">CHICKODE:</span>
+            <span class="hero__titleSub">데이터와 함께 자라나는 코딩 세계</span>
+          </h1>
+
+          <!-- 중앙 잔디 섬 + 캐릭터: 투명 PNG 전용 공간 -->
+          <div class="stage" aria-label="캐릭터 스테이지">
+            <div class="stage__platform" aria-hidden="true"></div>
+            <div class="stage__characters">
+              <img
+                class="heroArt"
+                src="C:/Users/LG/.cursor/projects/c-Users-LG-Desktop-chickode-project/assets/c__Users_LG_AppData_Roaming_Cursor_User_workspaceStorage_11c1dfa0e424eeadecc746e3b8a39b03_images_Gemini_Generated_Image_pfngw5pfngw5pfng-548e996f-ad82-4b29-ac39-7af3efa01bba.png"
+                alt="초록 잔디 섬 위에서 코딩하는 병아리 장면"
+                loading="eager"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- 하단 4개 버튼 도크 -->
+        <section class="dock" aria-label="빠른 메뉴">
+          <div class="dock__inner">
+            <a class="action action--primary" href="problems.html">
+              <span class="action__icon action__icon--bulb" aria-hidden="true">💡</span>
+              <span class="action__text">
+                <span class="action__title">문제 풀기</span>
+                <span class="action__desc">(학습 시작)</span>
+              </span>
+            </a>
+
+            <a class="action action--secondary" href="review.html">
+              <span class="action__icon action__icon--magnify" aria-hidden="true">🔎</span>
+              <span class="action__text">
+                <span class="action__title">오답 노트</span>
+                <span class="action__desc">(복습)</span>
+              </span>
+            </a>
+
+            <a class="action action--tertiary" href="character.html">
+              <span class="action__icon" aria-hidden="true">👕</span>
+              <span class="action__text">
+                <span class="action__title">캐릭터 키우기</span>
+                <span class="action__desc">(커스터마이징)</span>
+              </span>
+            </a>
+
+            <a class="action action--quaternary" href="pattern.html">
+              <span class="action__icon" aria-hidden="true">📈</span>
+              <span class="action__text">
+                <span class="action__title">패턴 분석</span>
+                <span class="action__desc">(성장 추적)</span>
+              </span>
+            </a>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
